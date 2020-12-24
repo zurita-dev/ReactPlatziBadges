@@ -10,10 +10,10 @@ class BadgesList extends React.Component {
           return (
             <li key={badge.id} className="BadgesListItem">
               <div className="row">
-                <div className="col-md-3">
+                <div className="col-md-3 col-sm-3">
                   <img className="BadgesListItem__avatar" src={badge.avatarUrl} alt="logo persona"></img>
                 </div>
-                <div className="col-md-9">
+                <div className="col-md-9 col-sm-9">
                   <h5>
                     {badge.firstName} {badge.lastName}
                   </h5>
