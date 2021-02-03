@@ -1,4 +1,3 @@
-// eslint-disable-next-line prettier/prettier
 import React from 'react';
 import './styles/Badge.css';
 import confLogo from '../images/badge-header.svg';
