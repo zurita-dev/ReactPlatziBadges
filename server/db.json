@@ -440,6 +440,30 @@
       "jobTitle": "Lawyer",
       "twitter": "ckaufmanpr",
       "id": "npaYZKI"
+    },
+    {
+      "firstName": "Daniel",
+      "lastName": "Zurita",
+      "email": "danielzurita94@hotmail.com",
+      "jobTittle": "Frontend developer",
+      "twitter": "danielin",
+      "id": "oAsw2XQ"
+    },
+    {
+      "firstName": "Daniel",
+      "lastName": "Zurita",
+      "email": "danielzurita94@hotmail.com",
+      "jobTittle": "Frontend Developer",
+      "twitter": "Danieldev",
+      "id": "fi_Btrf"
+    },
+    {
+      "firstName": "paula",
+      "lastName": "rivas",
+      "email": "paularivas@gmail.com",
+      "jobTittle": "developer",
+      "twitter": "asd",
+      "id": "FrezDvJ"
     }
   ]
 }
