@@ -1,8 +1,8 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import './styles/BadgesList.css';
-import { Link } from 'react-router-dom';
-import Gravatar from './Gravatar';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import "./styles/BadgesList.css";
+import { Link } from "react-router-dom";
+import Gravatar from "./Gravatar";
 
 class BadgesList extends React.Component {
   render() {
@@ -21,18 +21,27 @@ class BadgesList extends React.Component {
         {this.props.badges.map((badge) => {
           return (
             <li key={badge.id} className="BadgesListItem">
-              <div className="row">
-                <div className="col-md-3 col-sm-3">
-                  <Gravatar className="BadgesListItem__avatar" email={badge.email} alt="Avatar" />
-                  {/* <img className="" src={badge.avatarUrl} alt="logo persona"></img> */}
+              <Link
+                className="text-reset text-decoration-none"
+                to={`/badges/${badge.id}/edit`}
+              >
+                <div className="row">
+                  <div className="col-md-3 col-sm-3">
+                    <Gravatar
+                      className="BadgesListItem__avatar"
+                      email={badge.email}
+                      alt="Avatar"
+                    />
+                    {/* <img className="" src={badge.avatarUrl} alt="logo persona"></img> */}
+                  </div>
+                  <div className="col-md-9 col-sm-9">
+                    <h5>
+                      {badge.firstName} {badge.lastName}
+                    </h5>
+                    <h5 style={{ color: "#00acee" }}>@{badge.twitter}</h5>
+                  </div>
                 </div>
-                <div className="col-md-9 col-sm-9">
-                  <h5>
-                    {badge.firstName} {badge.lastName}
-                  </h5>
-                  <h5 style={{ color: '#00acee' }}>@{badge.twitter}</h5>
-                </div>
-              </div>
+              </Link>
             </li>
           );
         })}

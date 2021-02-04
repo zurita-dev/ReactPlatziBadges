@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 class BadgeForm extends React.Component {
   handleClick = () => {
-    console.log('Button has pressed');
+    console.log("Button has pressed");
   };
   // handleSubmit = (e) => {
   //   e.preventDefault();
@@ -11,7 +11,6 @@ class BadgeForm extends React.Component {
   render() {
     return (
       <div>
-        <h1>New Attendant</h1>
         <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First Name</label>
@@ -63,10 +62,16 @@ class BadgeForm extends React.Component {
               value={this.props.formValues.twitter}
             ></input>
           </div>
-          <button type="submit" onClick={this.handleClick} className="btn btn-primary">
+          <button
+            type="submit"
+            onClick={this.handleClick}
+            className="btn btn-primary"
+          >
             Save
           </button>
-          {this.props.error && <p className="text-danger">{this.props.error.message}</p>}
+          {this.props.error && (
+            <p className="text-danger">{this.props.error.message}</p>
+          )}
         </form>
       </div>
     );
