@@ -23,7 +23,7 @@ class BadgesList extends React.Component {
             <li key={badge.id} className="BadgesListItem">
               <Link
                 className="text-reset text-decoration-none"
-                to={`/badges/${badge.id}/edit`}
+                to={`/badges/${badge.id}`}
               >
                 <div className="row">
                   <div className="col-md-3 col-sm-3">
